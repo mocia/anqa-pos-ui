@@ -18,10 +18,10 @@ export async function configure(aurelia) {
     .standardConfiguration()
     .feature("components")
     .plugin("aurelia-api", (config) => {
-      var auth = "https://com-anqa-service-auth-dev.azurewebsites.net/v1/";
-      var core = "https://com-anqa-service-core-dev.azurewebsites.net/v1/";
-      var pos = "https://com-anqa-service-pos-dev.azurewebsites.net/v1/";
-      var inventory = "https://com-anqa-service-warehouse-dev.azurewebsites.net/v1/";
+      var auth = "https://com-anqa-service-auth.azurewebsites.net/v1/";
+      var core = "https://com-anqa-service-core.azurewebsites.net/v1/";
+      var pos = "https://com-anqa-service-pos.azurewebsites.net/v1/";
+      var inventory = "https://com-anqa-service-warehouse.azurewebsites.net/v1/";
 
       config.registerEndpoint("auth", auth);
       config.registerEndpoint("core", core);
